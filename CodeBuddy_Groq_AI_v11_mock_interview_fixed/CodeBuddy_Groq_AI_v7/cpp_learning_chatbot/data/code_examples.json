@@ -1,0 +1,352 @@
+[
+  {
+    "title": "Sum of digits",
+    "unit": 1,
+    "language": "C++",
+    "description": "Loop and remainder",
+    "code": "#include <iostream>\nint main(){ int n=1234,sum=0; while(n){sum+=n%10;n/=10;} std::cout<<sum<<\"\\n\"; }"
+  },
+  {
+    "title": "Prime numbers from 1 to n",
+    "unit": 1,
+    "language": "C++",
+    "description": "Nested loops and primality",
+    "code": "#include <iostream>\nint main(){ int n=30; for(int x=2;x<=n;++x){bool prime=true; for(int d=2;d*d<=x;++d) if(x%d==0){prime=false;break;} if(prime) std::cout<<x<<\" \";} }"
+  },
+  {
+    "title": "Class and object",
+    "unit": 1,
+    "language": "C++",
+    "description": "Class, object and member function",
+    "code": "#include <iostream>\n#include <string>\nclass Student{public: std::string name; void show() const {std::cout<<name<<\"\\n\";}};\nint main(){Student s; s.name=\"Asha\"; s.show();}"
+  },
+  {
+    "title": "Constructors: default and parameterized",
+    "unit": 1,
+    "language": "C++",
+    "description": "Constructor overloading",
+    "code": "#include <iostream>\nclass Box{int width; public: Box():width(0){} Box(int w):width(w){} void show()const{std::cout<<width<<\"\\n\";}};\nint main(){Box a; Box b(5); a.show(); b.show();}"
+  },
+  {
+    "title": "Copy constructor",
+    "unit": 1,
+    "language": "C++",
+    "description": "Copy initialization",
+    "code": "#include <iostream>\nclass Score{int value; public: Score(int v):value(v){} Score(const Score& other):value(other.value){} void show()const{std::cout<<value<<\"\\n\";}};\nint main(){Score a(90); Score b=a; b.show();}"
+  },
+  {
+    "title": "Function overloading",
+    "unit": 1,
+    "language": "C++",
+    "description": "Compile-time polymorphism",
+    "code": "#include <iostream>\nint add(int a,int b){return a+b;} double add(double a,double b){return a+b;} int add(int a,int b,int c){return a+b+c;}\nint main(){std::cout<<add(2,3)<<\"\\n\"<<add(1.5,2.5)<<\"\\n\"<<add(1,2,3);}"
+  },
+  {
+    "title": "Friend function",
+    "unit": 1,
+    "language": "C++",
+    "description": "Friend access",
+    "code": "#include <iostream>\nclass Box{int width; public: Box(int w):width(w){} friend void show(const Box& b);};\nvoid show(const Box& b){std::cout<<b.width<<\"\\n\";}\nint main(){show(Box(8));}"
+  },
+  {
+    "title": "Single inheritance",
+    "unit": 2,
+    "language": "C++",
+    "description": "Base and derived class",
+    "code": "#include <iostream>\nclass Person{protected: int id=7;}; class Student:public Person{public:void show(){std::cout<<id<<\"\\n\";}};\nint main(){Student s;s.show();}"
+  },
+  {
+    "title": "Multilevel inheritance",
+    "unit": 2,
+    "language": "C++",
+    "description": "Inheritance hierarchy",
+    "code": "#include <iostream>\nclass A{public:void a(){std::cout<<\"A\\n\";}}; class B:public A{}; class C:public B{};\nint main(){C x;x.a();}"
+  },
+  {
+    "title": "Multiple inheritance",
+    "unit": 2,
+    "language": "C++",
+    "description": "Two base classes",
+    "code": "#include <iostream>\nclass Marks{public:int marks=80;}; class Sports{public:int points=10;}; class Student:public Marks,public Sports{};\nint main(){Student s;std::cout<<s.marks+s.points;}"
+  },
+  {
+    "title": "Resolve ambiguity with scope resolution",
+    "unit": 2,
+    "language": "C++",
+    "description": "Scope resolution",
+    "code": "#include <iostream>\nclass A{public:void show(){std::cout<<\"A\\n\";}}; class B{public:void show(){std::cout<<\"B\\n\";}}; class C:public A,public B{};\nint main(){C c;c.A::show();c.B::show();}"
+  },
+  {
+    "title": "Function overriding",
+    "unit": 2,
+    "language": "C++",
+    "description": "Virtual method and override",
+    "code": "#include <iostream>\nclass Animal{public:virtual void sound(){std::cout<<\"Animal\\n\";} virtual ~Animal()=default;}; class Dog:public Animal{public:void sound()override{std::cout<<\"Bark\\n\";}};\nint main(){Dog d;Animal* p=&d;p->sound();}"
+  },
+  {
+    "title": "Abstract class",
+    "unit": 2,
+    "language": "C++",
+    "description": "Pure virtual function",
+    "code": "#include <iostream>\nclass Shape{public:virtual double area()const=0;virtual ~Shape()=default;}; class Square:public Shape{double s;public:Square(double v):s(v){} double area()const override{return s*s;}};\nint main(){Square s(4);std::cout<<s.area();}"
+  },
+  {
+    "title": "Constructor/destructor order",
+    "unit": 2,
+    "language": "C++",
+    "description": "Object lifecycle",
+    "code": "#include <iostream>\nclass Base{public:Base(){std::cout<<\"Base+\\n\";}~Base(){std::cout<<\"Base-\\n\";}}; class Child:public Base{public:Child(){std::cout<<\"Child+\\n\";}~Child(){std::cout<<\"Child-\\n\";}};\nint main(){Child c;}"
+  },
+  {
+    "title": "Unary operator overloading",
+    "unit": 3,
+    "language": "C++",
+    "description": "Unary operator",
+    "code": "#include <iostream>\nclass Number{int n;public:Number(int v):n(v){} Number operator-()const{return Number(-n);} void show()const{std::cout<<n;}};\nint main(){Number n(5);(-n).show();}"
+  },
+  {
+    "title": "Binary plus operator overloading",
+    "unit": 3,
+    "language": "C++",
+    "description": "Binary operator",
+    "code": "#include <iostream>\nclass Complex{int r,i;public:Complex(int a,int b):r(a),i(b){} Complex operator+(const Complex& x)const{return Complex(r+x.r,i+x.i);} void show()const{std::cout<<r<<\" + \"<<i<<\"i\";}};\nint main(){(Complex(2,3)+Complex(4,5)).show();}"
+  },
+  {
+    "title": "Runtime polymorphism",
+    "unit": 3,
+    "language": "C++",
+    "description": "Virtual dispatch",
+    "code": "#include <iostream>\nclass Base{public:virtual void show(){std::cout<<\"Base\";}virtual ~Base()=default;};class Derived:public Base{public:void show()override{std::cout<<\"Derived\";}};\nint main(){Derived d;Base& b=d;b.show();}"
+  },
+  {
+    "title": "Prefix and postfix increment",
+    "unit": 3,
+    "language": "C++",
+    "description": "Unary prefix/postfix",
+    "code": "#include <iostream>\nclass Counter{int n;public:Counter(int v):n(v){} Counter& operator++(){++n;return *this;} Counter operator++(int){Counter old=*this;++n;return old;} int get()const{return n;}};\nint main(){Counter c(3);std::cout<<(++c).get()<<\" \";std::cout<<(c++).get()<<\" \"<<c.get();}"
+  },
+  {
+    "title": "Virtual destructor",
+    "unit": 3,
+    "language": "C++",
+    "description": "Safe polymorphic cleanup",
+    "code": "#include <iostream>\nclass Base{public:virtual ~Base(){std::cout<<\"Base cleaned\\n\";}};class Derived:public Base{public:~Derived(){std::cout<<\"Derived cleaned\\n\";}};\nint main(){Base* p=new Derived;delete p;}"
+  },
+  {
+    "title": "Overload area calculator",
+    "unit": 3,
+    "language": "C++",
+    "description": "Overloaded function signatures",
+    "code": "#include <iostream>\nint area(int side){return side*side;} int area(int l,int w){return l*w;} double area(double r){return 3.14159*r*r;}\nint main(){std::cout<<area(4)<<\" \"<<area(4,5)<<\" \"<<area(2.0);}"
+  },
+  {
+    "title": "Write to a file",
+    "unit": 4,
+    "language": "C++",
+    "description": "ofstream and error check",
+    "code": "#include <fstream>\n#include <iostream>\nint main(){std::ofstream f(\"message.txt\");if(!f){std::cerr<<\"Open failed\";return 1;}f<<\"Hello file\\n\";std::cout<<\"Written\";}"
+  },
+  {
+    "title": "Read a file line by line",
+    "unit": 4,
+    "language": "C++",
+    "description": "ifstream and getline",
+    "code": "#include <fstream>\n#include <iostream>\n#include <string>\nint main(){std::ifstream f(\"message.txt\");std::string line;if(!f){std::cerr<<\"Open failed\";return 1;}while(std::getline(f,line))std::cout<<line<<\"\\n\";}"
+  },
+  {
+    "title": "Append to a file",
+    "unit": 4,
+    "language": "C++",
+    "description": "Append mode",
+    "code": "#include <fstream>\nint main(){std::ofstream f(\"message.txt\",std::ios::app);f<<\"Added line\\n\";}"
+  },
+  {
+    "title": "Count words in a file",
+    "unit": 4,
+    "language": "C++",
+    "description": "Stream extraction",
+    "code": "#include <fstream>\n#include <iostream>\n#include <string>\nint main(){std::ifstream f(\"message.txt\");std::string word;int count=0;while(f>>word)++count;std::cout<<count;}"
+  },
+  {
+    "title": "File error handling",
+    "unit": 4,
+    "language": "C++",
+    "description": "Validate stream state",
+    "code": "#include <fstream>\n#include <iostream>\nint main(){std::ifstream f(\"missing.txt\");if(!f){std::cerr<<\"Could not open file\\n\";return 1;}std::cout<<\"OK\";}"
+  },
+  {
+    "title": "Try catch exception",
+    "unit": 5,
+    "language": "C++",
+    "description": "Exception safety",
+    "code": "#include <iostream>\n#include <stdexcept>\nint main(){try{int b=0;if(b==0)throw std::runtime_error(\"division by zero\");}catch(const std::exception& e){std::cout<<e.what();}}"
+  },
+  {
+    "title": "Function template",
+    "unit": 5,
+    "language": "C++",
+    "description": "Generic function",
+    "code": "#include <iostream>\ntemplate<class T>T bigger(T a,T b){return a>b?a:b;}\nint main(){std::cout<<bigger(4,9)<<\" \"<<bigger(2.5,1.5);}"
+  },
+  {
+    "title": "Class template",
+    "unit": 5,
+    "language": "C++",
+    "description": "Generic class",
+    "code": "#include <iostream>\ntemplate<class T>class Pair{T a,b;public:Pair(T x,T y):a(x),b(y){} T sum()const{return a+b;}};\nint main(){Pair<int> p(2,3);std::cout<<p.sum();}"
+  },
+  {
+    "title": "Catch all exceptions",
+    "unit": 5,
+    "language": "C++",
+    "description": "catch(...)",
+    "code": "#include <iostream>\nint main(){try{throw 7;}catch(...){std::cout<<\"Unknown exception caught\";}}"
+  },
+  {
+    "title": "Standard exception",
+    "unit": 5,
+    "language": "C++",
+    "description": "Checked vector access",
+    "code": "#include <iostream>\n#include <vector>\nint main(){try{std::vector<int> v;v.at(2);}catch(const std::out_of_range& e){std::cout<<\"Out of range\";}}"
+  },
+  {
+    "title": "Vector and sorting",
+    "unit": 6,
+    "language": "C++",
+    "description": "Sequence container and algorithm",
+    "code": "#include <algorithm>\n#include <iostream>\n#include <vector>\nint main(){std::vector<int> v={4,1,3,2};std::sort(v.begin(),v.end());for(int n:v)std::cout<<n<<\" \";}"
+  },
+  {
+    "title": "Set removes duplicates",
+    "unit": 6,
+    "language": "C++",
+    "description": "Ordered unique values",
+    "code": "#include <iostream>\n#include <set>\nint main(){std::set<int> s={3,1,3,2};for(int n:s)std::cout<<n<<\" \";}"
+  },
+  {
+    "title": "Map key-value pairs",
+    "unit": 6,
+    "language": "C++",
+    "description": "Associative container",
+    "code": "#include <iostream>\n#include <map>\nint main(){std::map<std::string,int> marks={{\"Asha\",90},{\"Raj\",82}};std::cout<<marks[\"Asha\"]; }"
+  },
+  {
+    "title": "Count algorithm",
+    "unit": 6,
+    "language": "C++",
+    "description": "STL counting",
+    "code": "#include <algorithm>\n#include <iostream>\n#include <vector>\nint main(){std::vector<int> v={1,2,2,3,2};std::cout<<std::count(v.begin(),v.end(),2);}"
+  },
+  {
+    "title": "Queue adapter",
+    "unit": 6,
+    "language": "C++",
+    "description": "FIFO container adapter",
+    "code": "#include <iostream>\n#include <queue>\nint main(){std::queue<int> q;q.push(10);q.push(20);std::cout<<q.front();q.pop();std::cout<<\" \"<<q.front();}"
+  },
+  {
+    "title": "Hello world",
+    "unit": 1,
+    "language": "C",
+    "description": "Output",
+    "code": "#include <stdio.h>\nint main(void){printf(\"Hello, C!\\n\");return 0;}"
+  },
+  {
+    "title": "Sum of two numbers",
+    "unit": 1,
+    "language": "C",
+    "description": "Variables and arithmetic",
+    "code": "#include <stdio.h>\nint main(void){int a=4,b=6;printf(\"%d\",a+b);return 0;}"
+  },
+  {
+    "title": "Even or odd",
+    "unit": 1,
+    "language": "C",
+    "description": "Conditionals",
+    "code": "#include <stdio.h>\nint main(void){int n=7;printf(n%2==0?\"Even\":\"Odd\");return 0;}"
+  },
+  {
+    "title": "Factorial loop",
+    "unit": 1,
+    "language": "C",
+    "description": "Loop",
+    "code": "#include <stdio.h>\nint main(void){int n=5,r=1;for(int i=1;i<=n;i++)r*=i;printf(\"%d\",r);return 0;}"
+  },
+  {
+    "title": "Function example",
+    "unit": 1,
+    "language": "C",
+    "description": "Function",
+    "code": "#include <stdio.h>\nint square(int n){return n*n;} int main(void){printf(\"%d\",square(6));return 0;}"
+  },
+  {
+    "title": "Hello world",
+    "unit": 1,
+    "language": "Java",
+    "description": "Output",
+    "code": "public class Main { public static void main(String[] args) { System.out.println(\"Hello, Java!\"); } }"
+  },
+  {
+    "title": "Sum of two numbers",
+    "unit": 1,
+    "language": "Java",
+    "description": "Variables and arithmetic",
+    "code": "public class Main { public static void main(String[] args) { int a=4,b=6; System.out.println(a+b); } }"
+  },
+  {
+    "title": "Even or odd",
+    "unit": 1,
+    "language": "Java",
+    "description": "Conditionals",
+    "code": "public class Main { public static void main(String[] args) { int n=7; System.out.println(n%2==0 ? \"Even\" : \"Odd\"); } }"
+  },
+  {
+    "title": "Factorial loop",
+    "unit": 1,
+    "language": "Java",
+    "description": "Loop",
+    "code": "public class Main { public static void main(String[] args) { int n=5,r=1; for(int i=1;i<=n;i++) r*=i; System.out.println(r); } }"
+  },
+  {
+    "title": "Class and object",
+    "unit": 1,
+    "language": "Java",
+    "description": "Object-oriented basics",
+    "code": "class Student { String name; Student(String n){name=n;} void show(){System.out.println(name);} public static void main(String[] args){new Student(\"Asha\").show();} }"
+  },
+  {
+    "title": "Hello world",
+    "unit": 1,
+    "language": "Python",
+    "description": "Output",
+    "code": "print(\"Hello, Python!\")"
+  },
+  {
+    "title": "Sum of two numbers",
+    "unit": 1,
+    "language": "Python",
+    "description": "Variables and arithmetic",
+    "code": "a, b = 4, 6\nprint(a + b)"
+  },
+  {
+    "title": "Even or odd",
+    "unit": 1,
+    "language": "Python",
+    "description": "Conditionals",
+    "code": "n = 7\nprint(\"Even\" if n % 2 == 0 else \"Odd\")"
+  },
+  {
+    "title": "Factorial loop",
+    "unit": 1,
+    "language": "Python",
+    "description": "Loop",
+    "code": "n = 5\nresult = 1\nfor i in range(1, n + 1):\n    result *= i\nprint(result)"
+  },
+  {
+    "title": "Function example",
+    "unit": 1,
+    "language": "Python",
+    "description": "Function",
+    "code": "def square(n):\n    return n * n\n\nprint(square(6))"
+  }
+]

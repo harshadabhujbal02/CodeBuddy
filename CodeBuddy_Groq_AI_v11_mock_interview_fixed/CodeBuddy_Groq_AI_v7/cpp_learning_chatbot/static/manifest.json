@@ -1,0 +1,32 @@
+{
+  "id": "/",
+  "name": "CodeBuddy \u2014 C++ Learning Space",
+  "short_name": "CodeBuddy",
+  "description": "A mobile-friendly C++ learning companion for ADPC303.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#fbfcff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/static/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/static/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/static/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

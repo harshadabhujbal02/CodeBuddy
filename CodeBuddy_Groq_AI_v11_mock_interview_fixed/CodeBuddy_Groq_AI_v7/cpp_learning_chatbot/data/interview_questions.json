@@ -1,0 +1,394 @@
+[
+  {
+    "category": "Fundamentals of OOP",
+    "question": "What is Object-Oriented Programming (OOP)?"
+  },
+  {
+    "category": "Fundamentals of OOP",
+    "question": "What are the four pillars of OOP?"
+  },
+  {
+    "category": "Fundamentals of OOP",
+    "question": "Define a class in C++."
+  },
+  {
+    "category": "Fundamentals of OOP",
+    "question": "What is an object?"
+  },
+  {
+    "category": "Fundamentals of OOP",
+    "question": "What is encapsulation?"
+  },
+  {
+    "category": "Fundamentals of OOP",
+    "question": "What is data abstraction?"
+  },
+  {
+    "category": "Fundamentals of OOP",
+    "question": "What is inheritance?"
+  },
+  {
+    "category": "Fundamentals of OOP",
+    "question": "What is polymorphism?"
+  },
+  {
+    "category": "Fundamentals of OOP",
+    "question": "What is dynamic binding?"
+  },
+  {
+    "category": "Fundamentals of OOP",
+    "question": "What is static binding?"
+  },
+  {
+    "category": "Classes & Objects",
+    "question": "Difference between a class and a struct in C++."
+  },
+  {
+    "category": "Classes & Objects",
+    "question": "Explain default access modifiers for class vs struct."
+  },
+  {
+    "category": "Classes & Objects",
+    "question": "What is a constructor?"
+  },
+  {
+    "category": "Classes & Objects",
+    "question": "What are types of constructors?"
+  },
+  {
+    "category": "Classes & Objects",
+    "question": "What is destructor?"
+  },
+  {
+    "category": "Classes & Objects",
+    "question": "What is the “this” pointer in C++?"
+  },
+  {
+    "category": "Classes & Objects",
+    "question": "Can constructors be virtual?"
+  },
+  {
+    "category": "Classes & Objects",
+    "question": "What is a copy constructor?"
+  },
+  {
+    "category": "Classes & Objects",
+    "question": "Difference between shallow and deep copy?"
+  },
+  {
+    "category": "Classes & Objects",
+    "question": "What is operator overloading?"
+  },
+  {
+    "category": "Inheritance",
+    "question": "What is single inheritance?"
+  },
+  {
+    "category": "Inheritance",
+    "question": "What is multiple inheritance?"
+  },
+  {
+    "category": "Inheritance",
+    "question": "What is multilevel inheritance?"
+  },
+  {
+    "category": "Inheritance",
+    "question": "What is hierarchical inheritance?"
+  },
+  {
+    "category": "Inheritance",
+    "question": "What is hybrid inheritance?"
+  },
+  {
+    "category": "Inheritance",
+    "question": "What is the diamond problem and how to solve it?"
+  },
+  {
+    "category": "Inheritance",
+    "question": "What is virtual inheritance?"
+  },
+  {
+    "category": "Inheritance",
+    "question": "What does “protected” inheritance do?"
+  },
+  {
+    "category": "Inheritance",
+    "question": "How do you call base class constructor?"
+  },
+  {
+    "category": "Inheritance",
+    "question": "Can private members be inherited?"
+  },
+  {
+    "category": "Polymorphism",
+    "question": "What is compile-time polymorphism?"
+  },
+  {
+    "category": "Polymorphism",
+    "question": "What is runtime polymorphism?"
+  },
+  {
+    "category": "Polymorphism",
+    "question": "What is function overloading?"
+  },
+  {
+    "category": "Polymorphism",
+    "question": "What is function overriding?"
+  },
+  {
+    "category": "Polymorphism",
+    "question": "What is a virtual function?"
+  },
+  {
+    "category": "Polymorphism",
+    "question": "What is pure virtual function?"
+  },
+  {
+    "category": "Polymorphism",
+    "question": "What is an abstract class?"
+  },
+  {
+    "category": "Polymorphism",
+    "question": "Why do you need a virtual destructor?"
+  },
+  {
+    "category": "Polymorphism",
+    "question": "What is late binding?"
+  },
+  {
+    "category": "Polymorphism",
+    "question": "What is early binding?"
+  },
+  {
+    "category": "Access Specifiers",
+    "question": "What are public, private, and protected access specifiers?"
+  },
+  {
+    "category": "Access Specifiers",
+    "question": "What’s the difference between private and protected?"
+  },
+  {
+    "category": "Access Specifiers",
+    "question": "Can private members be accessed by derived classes?"
+  },
+  {
+    "category": "Access Specifiers",
+    "question": "What is friend function and friend class?"
+  },
+  {
+    "category": "Access Specifiers",
+    "question": "What is data hiding?"
+  },
+  {
+    "category": "Access Specifiers",
+    "question": "What are inline functions?"
+  },
+  {
+    "category": "Access Specifiers",
+    "question": "What is static member in class?"
+  },
+  {
+    "category": "Access Specifiers",
+    "question": "What is mutable keyword?"
+  },
+  {
+    "category": "Access Specifiers",
+    "question": "Explain “final” keyword (since C++11)."
+  },
+  {
+    "category": "Access Specifiers",
+    "question": "How does access control help security?"
+  },
+  {
+    "category": "Memory & Object Management",
+    "question": "What is new and delete?"
+  },
+  {
+    "category": "Memory & Object Management",
+    "question": "What is difference between malloc/free and new/delete?"
+  },
+  {
+    "category": "Memory & Object Management",
+    "question": "What is placement new?"
+  },
+  {
+    "category": "Memory & Object Management",
+    "question": "What are smart pointers?"
+  },
+  {
+    "category": "Memory & Object Management",
+    "question": "Explain unique_ptr vs shared_ptr vs weak_ptr."
+  },
+  {
+    "category": "Memory & Object Management",
+    "question": "What is memory leak and how to avoid it?"
+  },
+  {
+    "category": "Memory & Object Management",
+    "question": "What are dangling pointers?"
+  },
+  {
+    "category": "Memory & Object Management",
+    "question": "What is object slicing?"
+  },
+  {
+    "category": "Memory & Object Management",
+    "question": "How does C++ handle object lifetime?"
+  },
+  {
+    "category": "Advanced OOP & Design",
+    "question": "What are design principles (SOLID) in OOP?"
+  },
+  {
+    "category": "Advanced OOP & Design",
+    "question": "What is dependency injection?"
+  },
+  {
+    "category": "Advanced OOP & Design",
+    "question": "What is interface vs abstract class?"
+  },
+  {
+    "category": "Advanced OOP & Design",
+    "question": "What is composition vs aggregation?"
+  },
+  {
+    "category": "Advanced OOP & Design",
+    "question": "What are design patterns?"
+  },
+  {
+    "category": "Advanced OOP & Design",
+    "question": "What is factory pattern?"
+  },
+  {
+    "category": "Advanced OOP & Design",
+    "question": "What is strategy pattern?"
+  },
+  {
+    "category": "Advanced OOP & Design",
+    "question": "What is iterator pattern?"
+  },
+  {
+    "category": "Advanced OOP & Design",
+    "question": "When to use inheritance vs composition?"
+  },
+  {
+    "category": "Advanced OOP & Design",
+    "question": "What is interface segregation principle (ISP)?"
+  },
+  {
+    "category": "Templates & Generics",
+    "question": "What are templates in C++?"
+  },
+  {
+    "category": "Templates & Generics",
+    "question": "What is function template?"
+  },
+  {
+    "category": "Templates & Generics",
+    "question": "What is class template?"
+  },
+  {
+    "category": "Templates & Generics",
+    "question": "What is template specialization?"
+  },
+  {
+    "category": "Templates & Generics",
+    "question": "What are variadic templates?"
+  },
+  {
+    "category": "Templates & Generics",
+    "question": "What are template metaprogramming basics?"
+  },
+  {
+    "category": "Templates & Generics",
+    "question": "What is std::is_base_of?"
+  },
+  {
+    "category": "Templates & Generics",
+    "question": "How do templates relate to OOP?"
+  },
+  {
+    "category": "Templates & Generics",
+    "question": "What are concepts (C++20)?"
+  },
+  {
+    "category": "Templates & Generics",
+    "question": "How to constrain templates?"
+  },
+  {
+    "category": "Operators & Overloading",
+    "question": "Which operators cannot be overloaded?"
+  },
+  {
+    "category": "Operators & Overloading",
+    "question": "How to overload assignment operator?"
+  },
+  {
+    "category": "Operators & Overloading",
+    "question": "What is conversion operator?"
+  },
+  {
+    "category": "Operators & Overloading",
+    "question": "What is function call operator overloading?"
+  },
+  {
+    "category": "Operators & Overloading",
+    "question": "What is stream operator overloading?"
+  },
+  {
+    "category": "Operators & Overloading",
+    "question": "Rules for operator overloading?"
+  },
+  {
+    "category": "Operators & Overloading",
+    "question": "What is friend operator function?"
+  },
+  {
+    "category": "Miscellaneous & Scenario",
+    "question": "What are virtual table (vtable) and vptr?"
+  },
+  {
+    "category": "Miscellaneous & Scenario",
+    "question": "Can destructor throw exceptions?"
+  },
+  {
+    "category": "Miscellaneous & Scenario",
+    "question": "What is multiple dispatch?"
+  },
+  {
+    "category": "Miscellaneous & Scenario",
+    "question": "What is dynamic_cast?"
+  },
+  {
+    "category": "Miscellaneous & Scenario",
+    "question": "What is typeid and RTTI?"
+  },
+  {
+    "category": "Miscellaneous & Scenario",
+    "question": "What is friend class use case?"
+  },
+  {
+    "category": "Miscellaneous & Scenario",
+    "question": "What is the difference between composition and inheritance?"
+  },
+  {
+    "category": "Miscellaneous & Scenario",
+    "question": "Can C++ support OOP without classes?"
+  },
+  {
+    "category": "Miscellaneous & Scenario",
+    "question": "What are access specifiers default for template class?"
+  },
+  {
+    "category": "Miscellaneous & Scenario",
+    "question": "Explain pointer to member function."
+  },
+  {
+    "category": "Miscellaneous & Scenario",
+    "question": "How are pure virtual methods implemented under the hood?"
+  },
+  {
+    "category": "Miscellaneous & Scenario",
+    "question": "How do you debug OOP design issues in large systems?"
+  }
+]
